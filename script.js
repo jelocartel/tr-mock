@@ -1,4 +1,4 @@
-var dev = 0;
+var dev = 1;
 var preloaderDelay = 1000;
 
 var removePreloader = function() {
@@ -19,6 +19,12 @@ var removePreloader = function() {
 
 var main = function(){
   removePreloader();
+
+  $('#go-button').on('click', function(){
+    $('body').removeClass('active-landing');
+    $('body').addClass('active-main');
+  });
+
 };
 
 $(main);
