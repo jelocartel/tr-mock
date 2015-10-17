@@ -31,6 +31,18 @@ body {
   position: absolute;
 }
 
+#del-button:hover {
+  color: #000;
+}
+
+#del-button {
+  color:#ccc;
+  font-size:14px;
+  line-height:20px;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
 .preloader-wrapper {
   margin: auto;
 }
