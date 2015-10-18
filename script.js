@@ -22,6 +22,13 @@ var main = function(){
     }, 300);
   });
 
+  $('#modal2 .collection-item').on('click', function(){
+    $('#modal2').closeModal();
+    $('#canvas').attr('src', 'img/2.png');
+    $('#open-modal').addClass('disabled');
+    $('#send-button').removeClass('disabled');
+
+  });
   if (dev) {
     $('.proto-preloader').remove();
     $('.main-container').removeClass('off-screen');
