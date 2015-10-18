@@ -8,9 +8,15 @@ body {
   background-color: rgba(24, 35, 100, 0.6);
 }
 
+.main-page .card {
+  height: calc(5vh + 20px) ;
+  transition: height 500ms;
+}
+
 .main-container {
   transition: transform 500ms, opacity 500ms;
 }
+
 .main-container.off-screen {
   transform: translateY(-100%);
   opacity: 0;
