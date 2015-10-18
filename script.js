@@ -15,6 +15,12 @@ var removePreloader = function() {
 
 var main = function(){
   $('.modal-trigger').leanModal();
+  $('#modal1 .collection-item').on('click', function(){
+    $('#modal1').closeModal();
+    setTimeout(function(){
+      $('#modal2').openModal();
+    }, 300);
+  });
 
   if (dev) {
     $('.proto-preloader').remove();
