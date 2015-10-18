@@ -64,6 +64,9 @@ var main = function(){
     setTimeout(function(){
       $('body').removeClass('active-landing');
       $('body').addClass('active-main');
+      $('.main-page').one('transitionend', function(){
+        $('.main-page .card').css('height', '100vh');
+      });
     }, clickTimeout);
   });
 
