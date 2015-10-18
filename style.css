@@ -43,6 +43,10 @@ body {
   transition: color 300ms;
 }
 
+#modal1 {
+  max-height: 75% !important;
+}
+
 .preloader-wrapper {
   margin: auto;
 }
