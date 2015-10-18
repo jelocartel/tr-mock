@@ -79,17 +79,17 @@
           <img src="img/logo.png" style="height:5vh;margin-bottom:20px">
         </span>
         <h5 style="margin-bottom:20px">Jako akademiki służyły baraki.</h5>
-        <img src="img/1.png" style="min-width:400px;min-height:400px;width:60%;border:1px solid #ccc">
+        <img id="canvas" src="img/1.png" style="min-width:400px;min-height:400px;width:60%;border:1px solid #ccc">
         <div style="text-align:left;display:block;min-width:400px;width:60%;margin:auto;">
           <p id="del-button"><i class="material-icons">delete</i>DELETE</p>
         </div>
-        <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1" style="position:absolute;bottom:15px;right:15px;"><i class="material-icons">add</i></a>
+        <a id="open-modal" class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1" style="position:absolute;bottom:15px;right:15px;"><i class="material-icons">add</i></a>
       </div>
       <div class="card-action">
         <button class="btn-large waves-effect waves-light">drużyna piłkarska Dąb Jelonki
           <i class="material-icons right">info</i>
         </button>
-        <button class="btn-large waves-effect waves-light orange accent-4">jazda z koksem
+        <button id="send-button" class="btn-large waves-effect waves-light orange accent-4 disabled">jazda z koksem
           <i class="material-icons right">send</i>
         </button>
       </div>
