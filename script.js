@@ -23,9 +23,9 @@ var main = function(){
   });
 
   $('#main-send').on('click', function(){
-    $('#modal4').closeModal();
-
+    $('#main-send').addClass('disable');
     setTimeout(function(){
+      $('#modal4').closeModal();
       $('.proto-preloader').css('position', 'relative');
       $('.main-container').addClass('off-screen');
       $('.main-container').one('transitionend', function(){
