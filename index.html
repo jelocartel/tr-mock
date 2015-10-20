@@ -79,30 +79,100 @@
           <img src="img/logo.png" style="height:5vh;margin-bottom:20px">
         </span>
         <h5 style="margin-bottom:20px">Jako akademiki służyły baraki.</h5>
-        <img src="img/1.png" style="min-width:400px;min-height:400px;width:60%;border:1px solid #ccc">
+        <img id="canvas" src="img/1.png" style="min-width:400px;min-height:400px;width:60%;border:1px solid #ccc">
         <div style="text-align:left;display:block;min-width:400px;width:60%;margin:auto;">
           <p id="del-button"><i class="material-icons">delete</i>DELETE</p>
         </div>
-        <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1" style="position:absolute;bottom:15px;right:15px;"><i class="material-icons">add</i></a>
+        <a id="open-modal" class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1" style="position:absolute;bottom:15px;right:15px;"><i class="material-icons">add</i></a>
       </div>
       <div class="card-action">
-        <button class="btn-large waves-effect waves-light">drużyna piłkarska Dąb Jelonki
+        <button class="btn-large waves-effect waves-light modal-trigger" data-target="modal3">drużyna piłkarska Dąb Jelonki
           <i class="material-icons right">info</i>
         </button>
-        <button class="btn-large waves-effect waves-light orange accent-4">jazda z koksem
+        <button id="send-button" class="btn-large waves-effect waves-light orange accent-4 disabled">jazda z koksem
           <i class="material-icons right">send</i>
         </button>
       </div>
     </div>
   </div>
 
-  <div id="modal1" class="modal bottom-sheet">
+  <div id="modal1" class="modal bottom-sheet" class="max-height:75%;">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h6>Categories</h6>
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <img src="http://lorempixel.com/200/200?123" alt="" class="circle">
+          <span class="title">Category Name</span>
+          <p>Category Description</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="http://lorempixel.com/200/200?4321" alt="" class="circle">
+          <span class="title">Category Name</span>
+          <p>Category Description</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="http://lorempixel.com/200/200?8723" alt="" class="circle">
+          <span class="title">Category Name</span>
+          <p>Category Description</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="http://lorempixel.com/200/200?235245" alt="" class="circle">
+          <span class="title">Category Name</span>
+          <p>Category Description</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+      </ul>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal bottom-sheet" class="max-height:75%;">
+    <div class="modal-content">
+      <h6>Example category products</h6>
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <img src="http://lorempixel.com/200/200?123" alt="" class="circle">
+          <span class="title">Product Name</span>
+          <p>Product Description</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="http://lorempixel.com/200/200?4321" alt="" class="circle">
+          <span class="title">Product Name</span>
+          <p>Product Description</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="http://lorempixel.com/200/200?8723" alt="" class="circle">
+          <span class="title">Product Name</span>
+          <p>Product Description</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="http://lorempixel.com/200/200?235245" alt="" class="circle">
+          <span class="title">Product Name</span>
+          <p>Product Description</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Some info</h4>
+      <p>W pierwszych dniach września 1939 stoczono na terenie Jelonek walki pod dowództwem ppłk Leopolda Okulickiego. W 1943 syn Bogumiła Schneidera, Zygmunt, ofiarował ze swojego majątku działkę pod budowę kościoła. W 1951 została erygowana parafia pw. Podwyższenia Krzyża Świętego (kościół został konsekrowany w 1968). W 1947 Jelonki uzyskały połączenie autobusowe z Warszawą - linia W obsługiwała połączenie pomiędzy zajezdnią na ul. Młynarskiej a obecnym pl. Kasztelańskim (wtedy Jana III Sobieskiego).</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
     </div>
   </div>
 

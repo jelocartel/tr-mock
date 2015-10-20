@@ -43,6 +43,16 @@ body {
   transition: color 300ms;
 }
 
+#modal1, #modal2 {
+  max-height: 75% !important;
+}
+
+.collection-item:hover {
+  background-color: #eee !important;
+}
+.collection-item {
+  cursor: pointer;
+}
 .preloader-wrapper {
   margin: auto;
 }

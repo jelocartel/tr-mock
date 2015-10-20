@@ -1,4 +1,4 @@
-var dev = 1;
+var dev = 0;
 var preloaderDelay = 1000;
 var clickTimeout = 500;
 
@@ -15,7 +15,20 @@ var removePreloader = function() {
 
 var main = function(){
   $('.modal-trigger').leanModal();
+  $('#modal1 .collection-item').on('click', function(){
+    $('#modal1').closeModal();
+    setTimeout(function(){
+      $('#modal2').openModal();
+    }, 300);
+  });
 
+  $('#modal2 .collection-item').on('click', function(){
+    $('#modal2').closeModal();
+    $('#canvas').attr('src', 'img/2.png');
+    $('#open-modal').addClass('disabled');
+    $('#send-button').removeClass('disabled');
+
+  });
   if (dev) {
     $('.proto-preloader').remove();
     $('.main-container').removeClass('off-screen');
