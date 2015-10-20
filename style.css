@@ -43,6 +43,10 @@ body {
   transition: color 300ms;
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 #modal1, #modal2 {
   max-height: 75% !important;
 }
