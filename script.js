@@ -2,15 +2,7 @@ var dev = 1;
 var preloaderDelay = 1000;
 var clickTimeout = 500;
 
-$('body').removeClass('active-landing');
-$('body').addClass('active-main');
-
 var removePreloader = function() {
-  if (dev) {
-    $('.proto-preloader').remove();
-    $('.main-container').removeClass('off-screen');
-    return;
-  }
   setTimeout(function(){
     $('.proto-preloader').css('opacity', 0);
     $('.proto-preloader').one('transitionend', function(){
@@ -22,6 +14,16 @@ var removePreloader = function() {
 
 
 var main = function(){
+  $('.modal-trigger').leanModal();
+
+  if (dev) {
+    $('.proto-preloader').remove();
+    $('.main-container').removeClass('off-screen');
+    $('body').removeClass('active-landing');
+    $('body').addClass('active-main');
+    return;
+  }
+
   removePreloader();
 
   $('#go-button').on('click', function(){
