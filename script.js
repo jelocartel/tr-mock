@@ -1,4 +1,4 @@
-var dev = 0;
+var dev = 1;
 var preloaderDelay = 1000;
 var clickTimeout = 500;
 
