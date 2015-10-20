@@ -1,5 +1,9 @@
 var dev = 1;
 var preloaderDelay = 1000;
+var clickTimeout = 500;
+
+$('body').removeClass('active-landing');
+$('body').addClass('active-main');
 
 var removePreloader = function() {
   if (dev) {
@@ -21,8 +25,10 @@ var main = function(){
   removePreloader();
 
   $('#go-button').on('click', function(){
-    $('body').removeClass('active-landing');
-    $('body').addClass('active-main');
+    setTimeout(function(){
+      $('body').removeClass('active-landing');
+      $('body').addClass('active-main');
+    }, clickTimeout);
   });
 
 };

@@ -35,6 +35,10 @@ body {
   margin: auto;
 }
 
+.main-page-container {
+  width: 60%;
+}
+
 .page-container {
   transition: transform 500ms;
   transform: translateX(100%);
