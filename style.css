@@ -1,5 +1,5 @@
 body {
-  background-image: url('http://lorempixel.com/1024/768/');
+  background-image: url('http://lorempixel.com/102/76/');
   background-size: cover;
   overflow: hidden;
 }
@@ -33,4 +33,25 @@ body {
 
 .preloader-wrapper {
   margin: auto;
+}
+
+.page-container {
+  transition: transform 500ms;
+  transform: translateX(100%);
+}
+
+.page-container.off-left{
+  transform: translateX(-100%);
+}
+
+.page-container.main-page {
+  position: absolute;
+}
+
+body.active-landing .page-container.landing {
+  transform: translateX(0);
+}
+
+body.active-main .page-container.main-page {
+  transform: translateX(0);
 }

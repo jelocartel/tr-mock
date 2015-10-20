@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
-<body>
-  <div class="fullscreen overlay">
+<body class="active-landing">
+
+  <div class="fullscreen overlay page-container off-left landing">
     <div class="main-container container valign-wrapper fullscreen off-screen">
       <div style="text-align:center;margin:auto;width:40%">
           <div class="card z-depth-3">
@@ -19,7 +20,7 @@
               <p>Lansująca w pierwszej ćwierci XX wieku ideę tak zwanych "miast-ogrodów", jako alternatywy dla "nieludzkich" i zuniformalizowanych wielkich miast.</p>
             </div>
             <div class="card-action">
-              <button class="btn waves-effect waves-light">
+              <button class="btn waves-effect waves-light" id="go-button">
                 eldo
                 <i class="material-icons right">send</i>
               </button>
@@ -69,6 +70,12 @@
       </div>
     </div><!-- /preloader -->
   </div>
+
+
+  <div class="fullscreen overlay page-container main-page">
+    <h1>EEELO</h1>
+  </div>
+
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
 
